@@ -1,0 +1,58 @@
+{
+  "name": "cmpm-121-demo-3",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "test": "tsc && vite build"
+  },
+  "devDependencies": {
+    "@types/geojson": "^7946.0.12",
+    "@types/leaflet": "^1.9.7",
+    "@typescript-eslint/eslint-plugin": "^6.7.4",
+    "@typescript-eslint/parser": "^6.7.4",
+    "eslint": "^8.50.0",
+    "pre-commit": "^1.2.2",
+    "typescript": "^5.2.2",
+    "vite": "^4.4.5"
+  },
+  "eslintConfig": {
+    "root": true,
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+      "project": true
+    },
+    "plugins": [
+      "@typescript-eslint"
+    ],
+    "extends": [
+      "eslint:recommended",
+      "plugin:@typescript-eslint/recommended-type-checked",
+      "plugin:@typescript-eslint/stylistic-type-checked"
+    ],
+    "rules": {
+      "@typescript-eslint/semi": "error",
+      "@typescript-eslint/naming-convention": "error",
+      "@typescript-eslint/brace-style": "error",
+      "@typescript-eslint/no-unnecessary-boolean-literal-compare": "error",
+      "@typescript-eslint/quotes": [
+        "error",
+        "double",
+        {
+          "allowTemplateLiterals": true
+        }
+      ],
+      "@typescript-eslint/no-unused-vars": "warn",
+      "@typescript-eslint/prefer-for-of": "warn"
+    }
+  },
+  "dependencies": {
+    "@adeira/murmur-hash": "^2.0.1",
+    "@types/adeira__murmur-hash": "^0.2.1",
+    "leaflet": "^1.9.4",
+    "murmur-32": "^1.0.0"
+  }
+}
